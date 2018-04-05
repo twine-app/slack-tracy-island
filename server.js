@@ -1,5 +1,7 @@
 const express = require("express");
-
+const token = process.env.SLACK_BOT_TOKEN
+const Slack = require('slack')
+const bot = new Slack({token})
 const app = express();
 
 app.set("port", process.env.PORT || 3001);
@@ -9,10 +11,14 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.get("/api/connect", (req, res) => {
+app.get("/api/connect", async (req, res) => {
+    const response = await bot.users.list({presence: true})
+    console.log('Response from Slack')
+    console.log(response)
     res.json({
-        'connected': true,
-        'message':'hello from Tracy Island'
+        connected: true,
+        message:'hello from Tracy Island',
+        users: response.members
     });
 });
 

@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 function connect(cb) {
   return fetch(`api/connect`, {
     accept: "application/json"
