@@ -1,35 +1,25 @@
 import React, { Component } from "react";
-import SelectedFoods from "./SelectedFoods";
-import FoodSearch from "./FoodSearch";
+import Client from "./Client"
 
 class App extends Component {
   state = {
-    selectedFoods: []
+    connected: false
   };
 
-  removeFoodItem = itemIndex => {
-    const filteredFoods = this.state.selectedFoods.filter(
-      (item, idx) => itemIndex !== idx
-    );
-    this.setState({ selectedFoods: filteredFoods });
-  };
-
-  addFood = food => {
-    const newFoods = this.state.selectedFoods.concat(food);
-    this.setState({ selectedFoods: newFoods });
-  };
+  componentDidMount() {
+      Client.connect(response => {
+          this.setState({
+              connected: response.connected
+          });
+      });
+  }
 
   render() {
-    const { selectedFoods } = this.state;
 
     return (
       <div className="App">
         <div className="ui text container">
-          <SelectedFoods
-            foods={selectedFoods}
-            onFoodClick={this.removeFoodItem}
-          />
-          <FoodSearch onFoodClick={this.addFood} />
+            {this.state.connected ? 'yeah' : 'nah'}
         </div>
       </div>
     );

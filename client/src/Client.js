@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-function search(query, cb) {
-  return fetch(`api/food?q=${query}`, {
+function connect(cb) {
+  return fetch(`api/connect`, {
     accept: "application/json"
   })
     .then(checkStatus)
@@ -23,5 +23,5 @@ function parseJSON(response) {
   return response.json();
 }
 
-const Client = { search };
+const Client = { connect };
 export default Client;
