@@ -17,29 +17,43 @@ class App extends Component {
           });
       });
   }
+    isUserGalleryable(user) {
+        return !user.is_bot &&
+            user.name !== 'slackbot' &&
+            !user.deleted
+    }
 
-  render() {
-    console.log(this.state.users)
-    return (
-      <div className="App">
-        <div className="ui text container">
-            {this.state.connected ? 'yeah' : 'nah'}
-            <ul>
-                {this.state.users.map(function(user){
-                    if (
-                        !user.is_bot &&
-                        user.name !== 'slackbot' &&
-                        !user.profile.image_24.includes('secure.gravatar.com')
-                    ) {
-                        return <GalleryItem user={user}/>;
-                    }
+    renderActiveGallery(displayActive) {
+        return this.state.users.map((user) => {
+            if (this.isUserGalleryable(user)) {
+                if (
+                    (displayActive && user.presence === 'active') ||
+                    (!displayActive && user.presence !== 'active')
+                ){
+                    return <GalleryItem user={user}/>;
+                }
+            }
+        })
+    }
 
-                })}
-            </ul>
-        </div>
-      </div>
-    );
-  }
+    render() {
+        console.log(this.state.users)
+        return (
+            <div className="App">
+                <div className="ui container">
+                    <h1>Tracy Island</h1>
+                    <h2>Active</h2>
+                    <div className="ui stackable four column grid">
+                        {this.renderActiveGallery(true)}
+                    </div>
+                    <h2>Away</h2>
+                    <div className="ui stackable four column grid">
+                        {this.renderActiveGallery(false)}
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;

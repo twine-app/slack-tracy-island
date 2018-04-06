@@ -8,6 +8,73 @@ body {
   margin-top: 7em;
 }
 
-#food-search {
-  margin-top: 5em;
+.gallery_item {
+  border:solid 2px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+  max-height:100%;
+  max-width:100%;
+  display: block;
+}
+
+.frame {
+  background-color: #ddc;
+  border: solid 16.1px #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1px;
+  position: relative;
+  text-align: center;
+}
+.frame:before {
+  border-radius: 2px;
+  bottom: -5.4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) inset;
+  content: "";
+  left: -5.4px;
+  position: absolute;
+  right: -5.4px;
+  top: -5.4px;
+}
+.frame:after {
+   border-radius:2px;
+   bottom:-11.5px;
+   box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+   content:"";
+   left:-11.5px;
+   position:absolute;
+   right:-11.5px;
+   top:-11.5px;
+}
+
+.ui.container {
+  background: #ffc92a30;
+  padding: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .ui.container {
+    padding: 20px;
+  }
+}
+
+.ui.grid>.column:not(.row) {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+  position: relative;
+  display: inline-block;
+  width: 6.25%;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  vertical-align: top;
 }
