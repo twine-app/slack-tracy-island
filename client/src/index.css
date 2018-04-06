@@ -67,6 +67,7 @@ h1 {
   padding: 1px;
   position: relative;
   text-align: center;
+  margin-bottom: 30px;
 }
 .frame:before {
   border-radius: 2px;
@@ -89,6 +90,22 @@ h1 {
    top:-11.5px;
 }
 
+.label span {
+  margin-bottom: 5px;
+}
+
+.label span:last-child {
+  margin-bottom: 0px;
+}
+
+.label__real_name, .label__title, .label__tz {
+  display: block;
+}
+
+.label__title, .label__tz {
+  font-weight: 100 !important;
+}
+
 .ui.grid>.column:not(.row) {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
@@ -101,6 +118,10 @@ h1 {
   padding-left: 3rem !important;
   padding-right: 3rem !important;
   vertical-align: top;
+}
+
+i.circular.icon {
+  box-shadow: 0 0 0 0.1em #019588 inset !important;
 }
 
 .button--logo img {
@@ -117,4 +138,9 @@ h1 {
 }
 .ui.green.button:hover {
   background-color: #000000 !important;
+}
+
+hr.most_incredible_separator {
+  margin-bottom: 25px;
+  margin-top: 25px;
 }

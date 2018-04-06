@@ -67,15 +67,15 @@ class App extends Component {
                     <footer className="ui">
                         <p><strong>About:</strong> Slack Tracy Island is akin to Thunderbird’s portrait gallery. However we couldn’t
                             get the eyes to light up in the two day hackathon.<br/>
-                            Fork the repo on <a href="#">Bitbucket</a> to getting it working for your team. F.A.B.</p>
-                        <hr/>
+                            Fork the repo on <a href="https://bitbucket.org/browserlondon/slack-tracy-island">Bitbucket</a> to getting it working for your team. F.A.B.</p>
+                        <hr className="most_incredible_separator"/>
                         <button className="ui circular twitter icon button big" onClick={()=>{window.location = 'https://twitter.com/intent/tweet?text=Slack+Tracy+Island%20by+@tweetsbytwine'}}>
                             <i className="twitter icon"></i>
                         </button>
-                        <div className="ui basic blue button big" onClick={()=>{window.location = 'http://bitbucket.org/browserlondon/'}}>
+                        <div className="ui basic blue button big" onClick={()=>{window.location = 'https://bitbucket.org/browserlondon/slack-tracy-island'}}>
                             <i className="fork icon"></i> Fork on Bitbucket
                         </div>
-                        <div className="ui button big green button--logo" onClick={()=>{window.location = 'http://www.twineintranet.com'}}>
+                        <div className="ui button big green button--logo" onClick={()=>{window.location = 'http://www.twineintranet.com?ref=tracy-island'}}>
                             Workplace tools by <img src="http://www.twineintranet.com/wp-content/themes/twine2016/assets/img/twine-logo-white.svg" alt="Twine Intranet" />
                         </div>
                     </footer>
