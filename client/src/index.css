@@ -31,6 +31,16 @@ h1 {
   font-weight: 100 !important;
 }
 
+.header--tag img svg {
+  stroke: red;
+}
+
+.header--tag .content {
+  font-family: Helvetica;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
 .gallery_item {
   border:solid 2px;
   border-bottom-color:#ffe;

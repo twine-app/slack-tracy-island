@@ -43,9 +43,12 @@ class App extends Component {
                 <div className="ui container">
                     <h1>Browser London & Twine</h1>
 
-                    <h2 className="ui header header--tag">
-                        Slack Tracy Island
-                    </h2>
+                    <h4 className="ui header header--tag">
+                        <img className="ui image" src="/tracy_island2.svg" />
+                        <div className="content">
+                            Slack Tracy Island
+                        </div>
+                    </h4>
 
                     <h3 className="ui center aligned icon header">
                         <i className="circular users icon"></i>
