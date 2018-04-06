@@ -41,15 +41,41 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="ui container">
-                    <h1>Tracy Island</h1>
-                    <h2>Active</h2>
+                    <h1>Browser London & Twine</h1>
+
+                    <h2 className="ui header header--tag">
+                        Slack Tracy Island
+                    </h2>
+
+                    <h3 className="ui center aligned icon header">
+                        <i className="circular users icon"></i>
+                        Reporting for duty
+                    </h3>
                     <div className="ui stackable four column grid">
                         {this.renderActiveGallery(true)}
                     </div>
-                    <h2>Away</h2>
-                    <div className="ui stackable four column grid">
+                    <h3 className="ui center aligned icon header">
+                        <i className="circular bell slash icon"></i>
+                        Away
+                    </h3>
+                    <div className="ui stackable four column grid gallery--inactive">
                         {this.renderActiveGallery(false)}
                     </div>
+                    <footer className="ui">
+                        <p><strong>About:</strong> Slack Tracy Island is akin to Thunderbird’s portrait gallery. However we couldn’t
+                            get the eyes to light up in the two day hackathon.<br/>
+                            Fork the repo on <a href="#">Github</a> to getting it working for your team. F.A.B.</p>
+                        <hr/>
+                        <button className="ui circular twitter icon button big" onClick={()=>{window.location = 'https://twitter.com/intent/tweet?text=Slack+Tracy+Island%20by+@tweetsbytwine'}}>
+                            <i className="twitter icon"></i>
+                        </button>
+                        <div className="ui basic blue button big" onClick={()=>{window.location = 'http://bitbucket.org/browserlondon/'}}>
+                            <i className="fork icon"></i> Fork on Bitbucket
+                        </div>
+                        <div className="ui button big green button--logo" onClick={()=>{window.location = 'http://www.twineintranet.com'}}>
+                            Workplace tools by <img src="http://www.twineintranet.com/wp-content/themes/twine2016/assets/img/twine-logo-white.svg" alt="Twine Intranet" />
+                        </div>
+                    </footer>
                 </div>
             </div>
         );

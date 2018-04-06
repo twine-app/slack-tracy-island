@@ -15,7 +15,7 @@ class GalleryItem extends React.Component {
                     <img className="gallery_item" alt={this.props.user.real_name} src={this.props.user.profile.image_192} />
                 </div>
                 <div className="ui label">
-                    {this.props.user.real_name}<span className="detail">{this.props.user.presence}</span>
+                    {this.props.user.real_name}<span className="detail">{this.props.user.profile.title}</span>
                     {this.props.user.tz !== 'Europe/London' && <div>🌎 {`${d.getHours()}:${d.getMinutes()}` } ({timezone})</div> }
                 </div>
             </div>
