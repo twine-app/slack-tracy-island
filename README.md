@@ -1,6 +1,8 @@
 # Slack Tracy Island
 
-This is a project from Twine to allow your team on Slack to appear as a gallery of photos that appear if they are active on Slack. It's a tenuous nod to the innovation found on Tracy Island's headquarters.
+This is a tool powered by Slack to visualise who in your team is reporting for duty, also display their local time if they are not located GMT.  
+
+The name is a tenuous nod to the ahead of its time innovation found within Tracy Island's headquarters portrait gallery.
 
 ### Hackathon
 

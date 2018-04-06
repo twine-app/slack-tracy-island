@@ -31,14 +31,11 @@ h1 {
   font-weight: 100 !important;
 }
 
-.header--tag img svg {
-  stroke: red;
-}
-
 .header--tag .content {
   font-family: Helvetica;
   font-weight: 500;
   letter-spacing: 2.5px;
+  text-decoration: underline #019588;
 }
 
 .gallery_item {

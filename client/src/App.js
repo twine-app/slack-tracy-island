@@ -67,7 +67,7 @@ class App extends Component {
                     <footer className="ui">
                         <p><strong>About:</strong> Slack Tracy Island is akin to Thunderbird’s portrait gallery. However we couldn’t
                             get the eyes to light up in the two day hackathon.<br/>
-                            Fork the repo on <a href="#">Github</a> to getting it working for your team. F.A.B.</p>
+                            Fork the repo on <a href="#">Bitbucket</a> to getting it working for your team. F.A.B.</p>
                         <hr/>
                         <button className="ui circular twitter icon button big" onClick={()=>{window.location = 'https://twitter.com/intent/tweet?text=Slack+Tracy+Island%20by+@tweetsbytwine'}}>
                             <i className="twitter icon"></i>
