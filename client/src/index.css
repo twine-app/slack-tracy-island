@@ -7,6 +7,7 @@ body {
 .ui.container {
   background: #f5f5f5;
   padding: 10px;
+  margin-bottom: 50px
 }
 @media only screen and (min-width: 1200px) {
   .ui.container {
@@ -19,7 +20,7 @@ body {
 }
 
 h1, p, body {
-  font-family: "soleil" !important;
+  font-family: "soleil", Arial !important;
 }
 
 h1 {
@@ -63,11 +64,14 @@ h1 {
   border-top-color: #ddd;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   padding: 1px;
   position: relative;
   text-align: center;
   margin-bottom: 30px;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .frame:before {
   border-radius: 2px;
@@ -88,6 +92,37 @@ h1 {
    position:absolute;
    right:-11.5px;
    top:-11.5px;
+}
+@media (min-width: 768px) {
+  .frame {
+    width: 192px;
+  }
+}
+
+.label--frame {
+  display: block !important;
+  max-width: 230px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 20px !important;
+}
+
+@media (min-width: 768px) {
+  .label--frame {
+    margin-bottom: 0;
+  }
+}
+
+.blink {
+  animation: blinker 0.5s cubic-bezier(0.4, -0.04, 0, 1.17) infinite alternate;
+  position: absolute;
+  background-color: yellow;
+  border-radius: 50px;
+}
+
+@keyframes blinker {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
 .label span {
@@ -143,4 +178,8 @@ i.circular.icon {
 hr.most_incredible_separator {
   margin-bottom: 25px;
   margin-top: 25px;
+}
+
+footer {
+  margin-top: 50px;
 }

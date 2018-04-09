@@ -9,6 +9,10 @@ The name is a tenuous nod to the ahead of its time innovation found within Tracy
 This was the result of a two day hackathon. I'd suggest looking through the code before working out if you're comfortable hosting it.
 However you'll be able to get your team's Slack up and running and deployed to Heroku super easily.
 
+### Credit
+
+The boilerplate to this application was based off this <a href="https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/">blog post</a> from Anthony Accomazzo 
+
 ## Running locally
 
 ```
