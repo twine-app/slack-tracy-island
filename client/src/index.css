@@ -166,6 +166,7 @@ i.circular.icon {
 
 .ui.button {
   font-weight: 100 !important;
+  margin-bottom: 10px !important;
 }
 
 .ui.green.button {
