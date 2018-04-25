@@ -79,15 +79,15 @@ class App extends Component {
                         </p>
                         <p>
                             If your team makes use of Slack then you can get your own Slack Tracy Island running quick
-                            sharp, <a href="https://bitbucket.org/browserlondon/slack-tracy-island">fork it on
-                            Bitbucket.</a> F.A.B.
+                            sharp, <a href="https://github.com/twine-app/slack-tracy-island">fork it on
+                            Github.</a> F.A.B.
                         </p>
                         <hr className="most_incredible_separator"/>
                         <button className="ui circular twitter icon button big" onClick={()=>{window.location = 'https://twitter.com/intent/tweet?text=Slack+Tracy+Island%20by+@tweetsbytwine'}}>
                             <i className="twitter icon"></i>
                         </button>
-                        <button className="ui basic blue button big" onClick={()=>{window.location = 'https://bitbucket.org/browserlondon/slack-tracy-island'}}>
-                            <i className="fork icon"></i> Fork on Bitbucket
+                        <button className="ui basic blue button big" onClick={()=>{window.location = 'https://github.com/twine-app/slack-tracy-island'}}>
+                            <i className="fork icon"></i> Fork on Github
                         </button>
                         <button className="ui button big green button--logo" onClick={()=>{window.location = 'http://www.twineintranet.com?ref=tracy-island'}}>
                             Workplace tools by <img src="http://www.twineintranet.com/wp-content/themes/twine2016/assets/img/twine-logo-white.svg" alt="Twine Intranet" />
